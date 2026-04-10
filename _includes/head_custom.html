@@ -1,0 +1,210 @@
+<style>
+/* ============================================
+   Web3 Theme - 赛博朋克 / 区块链风格
+   ============================================ */
+
+:root {
+  --w3-primary: #8b5cf6;
+  --w3-cyan: #06b6d4;
+  --w3-green: #10b981;
+  --w3-pink: #ec4899;
+  --w3-bg-dark: #0a0a0f;
+  --w3-bg-card: #12121a;
+  --w3-bg-sidebar: #0d0d14;
+  --w3-border: #1e1e2e;
+  --w3-text: #e2e8f0;
+  --w3-text-muted: #64748b;
+}
+
+/* 全局背景 */
+body,
+.main-content-wrap {
+  background: var(--w3-bg-dark) !important;
+}
+
+/* 侧边栏 */
+.side-bar {
+  background: var(--w3-bg-sidebar) !important;
+  border-right: 1px solid var(--w3-border) !important;
+}
+
+/* 站点标题渐变 */
+.site-title {
+  background: linear-gradient(135deg, var(--w3-primary), var(--w3-cyan)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 800 !important;
+}
+
+/* 导航链接 */
+.nav-list .nav-list-item .nav-list-link {
+  color: var(--w3-text-muted) !important;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.nav-list .nav-list-item .nav-list-link:hover {
+  color: var(--w3-cyan) !important;
+  border-left-color: var(--w3-cyan);
+  background: rgba(6, 182, 212, 0.05) !important;
+}
+.nav-list .nav-list-item .nav-list-link.active {
+  color: var(--w3-primary) !important;
+  border-left-color: var(--w3-primary);
+  background: rgba(139, 92, 246, 0.08) !important;
+  font-weight: 600;
+}
+
+/* H1 标题渐变 */
+.main-content h1 {
+  background: linear-gradient(135deg, var(--w3-primary), var(--w3-cyan)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 800;
+}
+
+/* H2 标题 */
+.main-content h2 {
+  color: var(--w3-text) !important;
+  border-bottom: 1px solid var(--w3-border);
+  padding-bottom: 8px;
+}
+
+/* H3 标题 */
+.main-content h3 {
+  color: var(--w3-cyan) !important;
+}
+
+/* 正文链接 */
+.main-content a:not(.site-title):not(.nav-list-link):not(.btn):not(.back-to-top) {
+  color: var(--w3-cyan) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(6, 182, 212, 0.3);
+  transition: all 0.2s;
+}
+.main-content a:not(.site-title):not(.nav-list-link):not(.btn):not(.back-to-top):hover {
+  color: var(--w3-pink) !important;
+  border-bottom-color: var(--w3-pink);
+  text-shadow: 0 0 12px rgba(236, 72, 153, 0.3);
+}
+
+/* 加粗文字 */
+.main-content strong {
+  color: #f1f5f9;
+}
+
+/* 行内代码 */
+.main-content code {
+  background: rgba(139, 92, 246, 0.12) !important;
+  color: var(--w3-cyan) !important;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.88em;
+}
+
+/* 代码块 */
+.main-content pre {
+  background: #0d0d1a !important;
+  border: 1px solid var(--w3-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(139,92,246,0.1);
+  position: relative;
+  overflow: hidden;
+}
+.main-content pre::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(135deg, var(--w3-primary), var(--w3-cyan));
+}
+.main-content pre code {
+  background: transparent !important;
+  border: none !important;
+  color: var(--w3-text) !important;
+  padding: 0;
+}
+
+/* 表格 */
+.main-content table th {
+  background: rgba(139, 92, 246, 0.15) !important;
+  color: var(--w3-text) !important;
+  border-bottom: 2px solid var(--w3-primary) !important;
+  font-weight: 600;
+}
+.main-content table td {
+  border-color: var(--w3-border) !important;
+}
+.main-content table tr {
+  background: transparent !important;
+}
+.main-content table tr:nth-child(even) {
+  background: rgba(139, 92, 246, 0.03) !important;
+}
+.main-content table tr:hover {
+  background: rgba(139, 92, 246, 0.08) !important;
+}
+
+/* 搜索框 */
+.search-input {
+  background: var(--w3-bg-card) !important;
+  border: 1px solid var(--w3-border) !important;
+  color: var(--w3-text) !important;
+  border-radius: 8px !important;
+}
+.search-input:focus {
+  border-color: var(--w3-primary) !important;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* 引用块 */
+.main-content blockquote {
+  border-left: 3px solid var(--w3-primary) !important;
+  background: rgba(139, 92, 246, 0.05);
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  color: var(--w3-text-muted);
+}
+
+/* 分隔线 */
+.main-content hr {
+  border-color: var(--w3-border) !important;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--w3-border) !important;
+  color: var(--w3-text-muted) !important;
+}
+.site-footer a {
+  color: var(--w3-cyan) !important;
+}
+
+/* 回到顶部 */
+.back-to-top {
+  color: var(--w3-primary) !important;
+}
+.back-to-top:hover {
+  color: var(--w3-cyan) !important;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--w3-bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--w3-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--w3-primary); }
+
+/* 选中文本 */
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
+}
+
+/* 隐藏 "Just the Docs" 底部标记 */
+.site-footer > :last-child:not(.site-footer-custom) {
+  opacity: 0.3;
+  font-size: 0.7em;
+}
+</style>
