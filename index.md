@@ -8,7 +8,7 @@ permalink: /
 # Go 语言学习笔记
 {: .fs-9 }
 
-基于[《Go 语言圣经》](https://golang-china.github.io/gopl-zh/)的系统学习记录，涵盖 Go 语言核心概念与实践。
+A Web3 Builder's Journey into Go — 基于[《Go 语言圣经》](https://golang-china.github.io/gopl-zh/)的系统学习记录。
 {: .fs-6 .fw-300 }
 
 ---
@@ -28,8 +28,9 @@ permalink: /
 - [Go 官方文档](https://go.dev/doc/)
 - [Go Playground](https://go.dev/play/)
 - [Go by Example](https://gobyexample.com/)
+- [Ethereum Go 开发](https://goethereumbook.org/)
 
 ---
 
 {: .note }
-> 本站持续更新中，随学习进度逐步补充新章节。
+> 本站持续更新中，随学习进度逐步补充新章节。从 Solidity 到 Go，构建全栈 Web3 开发能力。

@@ -1,0 +1,261 @@
+// ============================================
+// Web3 Theme - 赛博朋克 / 区块链风格
+// ============================================
+
+// --- 变量 ---
+$web3-primary: #8b5cf6;      // 紫色主色
+$web3-cyan: #06b6d4;          // 青色
+$web3-green: #10b981;         // 绿色（成功状态）
+$web3-pink: #ec4899;          // 粉色高亮
+$web3-bg-dark: #0a0a0f;       // 深色背景
+$web3-bg-card: #12121a;       // 卡片背景
+$web3-bg-sidebar: #0d0d14;    // 侧边栏
+$web3-border: #1e1e2e;        // 边框
+$web3-text: #e2e8f0;          // 主文字
+$web3-text-muted: #64748b;    // 次要文字
+$web3-gradient: linear-gradient(135deg, $web3-primary, $web3-cyan);
+
+// --- 全局 ---
+body {
+  background: $web3-bg-dark !important;
+  color: $web3-text;
+}
+
+// --- 侧边栏 ---
+.side-bar {
+  background: $web3-bg-sidebar !important;
+  border-right: 1px solid $web3-border !important;
+}
+
+.site-title {
+  background: $web3-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+  letter-spacing: -0.5px;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: $web3-text-muted !important;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $web3-cyan !important;
+    border-left-color: $web3-cyan;
+    background: rgba($web3-cyan, 0.05) !important;
+  }
+
+  &.active {
+    color: $web3-primary !important;
+    border-left-color: $web3-primary;
+    background: rgba($web3-primary, 0.08) !important;
+    font-weight: 600;
+  }
+}
+
+// --- 主内容区 ---
+.main-content-wrap {
+  background: $web3-bg-dark !important;
+}
+
+.main-content {
+  h1 {
+    background: $web3-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  h2 {
+    color: $web3-text !important;
+    border-bottom: 1px solid $web3-border;
+    padding-bottom: 8px;
+
+    &::before {
+      content: "◆ ";
+      color: $web3-primary;
+      font-size: 0.7em;
+    }
+  }
+
+  h3 {
+    color: $web3-cyan !important;
+  }
+
+  a:not(.site-title):not(.nav-list-link):not(.btn) {
+    color: $web3-cyan !important;
+    text-decoration: none;
+    border-bottom: 1px solid rgba($web3-cyan, 0.3);
+    transition: all 0.2s;
+
+    &:hover {
+      color: $web3-pink !important;
+      border-bottom-color: $web3-pink;
+      text-shadow: 0 0 12px rgba($web3-pink, 0.3);
+    }
+  }
+
+  strong {
+    color: #f1f5f9;
+  }
+}
+
+// --- 代码块 ---
+code {
+  background: rgba($web3-primary, 0.12) !important;
+  color: $web3-cyan !important;
+  border: 1px solid rgba($web3-primary, 0.2);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.88em;
+}
+
+pre {
+  background: #0d0d1a !important;
+  border: 1px solid $web3-border !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba($web3-primary, 0.1);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: $web3-gradient;
+    border-radius: 8px 8px 0 0;
+  }
+
+  code {
+    background: transparent !important;
+    border: none;
+    color: $web3-text !important;
+    padding: 0;
+  }
+}
+
+// --- 表格 ---
+table {
+  border-collapse: collapse;
+
+  th {
+    background: rgba($web3-primary, 0.15) !important;
+    color: $web3-text !important;
+    border-bottom: 2px solid $web3-primary !important;
+    font-weight: 600;
+  }
+
+  td {
+    border-color: $web3-border !important;
+  }
+
+  tr {
+    background: transparent !important;
+
+    &:nth-child(even) {
+      background: rgba($web3-primary, 0.03) !important;
+    }
+
+    &:hover {
+      background: rgba($web3-primary, 0.08) !important;
+    }
+  }
+}
+
+// --- 搜索框 ---
+.search-input {
+  background: $web3-bg-card !important;
+  border: 1px solid $web3-border !important;
+  color: $web3-text !important;
+  border-radius: 8px !important;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: $web3-primary !important;
+    box-shadow: 0 0 0 3px rgba($web3-primary, 0.2) !important;
+  }
+
+  &::placeholder {
+    color: $web3-text-muted !important;
+  }
+}
+
+// --- Callout ---
+.note, .tip, .warning {
+  border-radius: 8px !important;
+  border-left: 4px solid !important;
+}
+
+blockquote {
+  border-left: 3px solid $web3-primary !important;
+  background: rgba($web3-primary, 0.05);
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  color: $web3-text-muted;
+}
+
+// --- 分隔线 ---
+hr {
+  border-color: $web3-border !important;
+  opacity: 0.5;
+}
+
+// --- Footer ---
+.site-footer {
+  border-top: 1px solid $web3-border !important;
+  color: $web3-text-muted !important;
+
+  a {
+    color: $web3-cyan !important;
+  }
+}
+
+// --- 页面底部的 "回到顶部" ---
+.main-content .back-to-top {
+  color: $web3-primary !important;
+
+  &:hover {
+    color: $web3-cyan !important;
+  }
+}
+
+// --- 滚动条 ---
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $web3-bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $web3-border;
+  border-radius: 3px;
+
+  &:hover {
+    background: $web3-primary;
+  }
+}
+
+// --- 选中文本 ---
+::selection {
+  background: rgba($web3-primary, 0.35);
+  color: #fff;
+}
+
+// --- Breadcrumb ---
+.breadcrumb-nav {
+  color: $web3-text-muted !important;
+}
+
+// --- "Just the Docs" 标记隐藏 ---
+.site-footer .site-footer-custom + * {
+  display: none;
+}

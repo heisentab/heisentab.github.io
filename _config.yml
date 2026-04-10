@@ -1,5 +1,5 @@
 title: Go 语言学习笔记
-description: 基于《Go 语言圣经》的学习记录
+description: A Web3 Builder's Journey into Go
 baseurl: "/go-learning"
 url: ""
 
@@ -9,7 +9,7 @@ color_scheme: dark
 
 aux_links:
   "GitHub":
-    - "https://github.com/taobo"
+    - "https://github.com/heisentab"
 
 nav_sort: case_insensitive
 heading_anchors: true
@@ -31,7 +31,7 @@ callouts:
     title: 警告
     color: red
 
-footer_content: "Go 语言学习笔记 &copy; 2025-2026 | 基于<a href=\"https://golang-china.github.io/gopl-zh/\">Go 语言圣经</a>"
+footer_content: "Go 语言学习笔记 &copy; 2025-2026 | Built by a Web3 Builder | 基于<a href=\"https://golang-china.github.io/gopl-zh/\">Go 语言圣经</a>"
 
 plugins:
   - jekyll-remote-theme
