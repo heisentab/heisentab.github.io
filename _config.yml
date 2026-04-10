@@ -1,0 +1,42 @@
+title: Go 语言学习笔记
+description: 基于《Go 语言圣经》的学习记录
+baseurl: "/go-learning"
+url: ""
+
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+
+color_scheme: dark
+
+aux_links:
+  "GitHub":
+    - "https://github.com/taobo"
+
+nav_sort: case_insensitive
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "回到顶部"
+
+search_enabled: true
+search:
+  heading_level: 3
+
+callouts:
+  note:
+    title: 注意
+    color: yellow
+  tip:
+    title: 提示
+    color: green
+  warning:
+    title: 警告
+    color: red
+
+footer_content: "Go 语言学习笔记 &copy; 2025-2026 | 基于<a href=\"https://golang-china.github.io/gopl-zh/\">Go 语言圣经</a>"
+
+plugins:
+  - jekyll-remote-theme
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
